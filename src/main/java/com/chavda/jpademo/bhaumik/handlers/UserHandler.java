@@ -29,7 +29,7 @@ public class UserHandler {
         return userService.getAllUser();
     }
 
-    @DeleteMapping
+    @DeleteMapping("deleteUser/{id}")
     public void deleteUser(@PathVariable("id") String id) {
              userService.deleteUser(id);
     }
