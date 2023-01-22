@@ -28,4 +28,9 @@ public class UserHandler {
     public List<User> getData() {
         return userService.getAllUser();
     }
+
+    @DeleteMapping
+    public void deleteUser(@PathVariable("id") String id) {
+             userService.deleteUser(id);
+    }
 }
