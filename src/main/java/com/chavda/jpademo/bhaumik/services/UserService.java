@@ -25,4 +25,8 @@ public class UserService {
         return userRepo.findAll();
     }
 
+    public void deleteUser(final String id) {
+        userRepo.deleteById(Long.valueOf(id));
+    }
+
 }
